@@ -9,6 +9,7 @@ import { Icon } from 'vant';
 
 import { Swipe, SwipeItem } from 'vant';
 
+// import rem from './assets/rem'
 Vue.use(Swipe).use(SwipeItem);
 
 Vue.use(Icon);

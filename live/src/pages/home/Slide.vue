@@ -2,10 +2,10 @@
   <div class="tool">
     <van-swipe :loop="false" :show-indicators='false'>
       <van-swipe-item>
-        <div class="item">
+        <router-link to='/home/opendoor' class="item">
           <span class="iconfont icon">&#xe652;</span>
           <p class="tips">手机开门</p>
-        </div>
+        </router-link>
         <div class="item">
           <span class="iconfont icon">&#xe63f;</span>
           <p class="tips">房屋账单</p>
@@ -47,30 +47,30 @@
 
 <style lang="stylus" scoped>
 .tool{
-  padding 10px 15px
+  padding 0.1rem 0.15rem
 }
 .item{
   display block
   float left
-  width 80px
-  height 80px 
+  width 0.75rem
+  height 0.8rem
   background-color #ccc
-  margin-right 5px
+  margin-right 0.05rem
   text-align center
-  padding-top 10px
+  padding-top 0.01rem
 }
 .icon{
-  font-size:28px
+  font-size:0.28rem
 }
 p {
   margin 0
 }
 .tips{
-  font-size 12px
+  font-size 0.12rem
 }
 .more{
-  font-size 18px
+  font-size 0.18rem
   color red
-  padding 10px 18px
+  padding 0.1rem 0.18rem
 }
 </style>

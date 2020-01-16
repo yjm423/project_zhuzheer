@@ -1,5 +1,7 @@
 //首页
 import Home from '../pages/home'  
+import Opendoor from '../pages/home/Opendoor.vue'  
+import Customer from '../pages/home/Customer.vue'  
 
 //友邻市集
 import Market from '../pages/market'  
@@ -35,7 +37,15 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
     },
     {
       path: '/home',
-      component: Home
+      component: Home,
+      children:[{
+        path:'opendoor',
+        component: Opendoor,
+      },
+      {
+        path:'customer',
+        component:Customer
+      }]
     },
     {
       path: '/market',

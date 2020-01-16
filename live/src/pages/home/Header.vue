@@ -15,7 +15,7 @@
 
 
 .navbar {
-  height: 50.5px;
+  height: 0.5rem;
 //   color: #fff;
 //   background: #e54847;
   border-bottom: 1px solid #e54847;
@@ -28,10 +28,10 @@
 .nav-header {
   display: block;
   -webkit-box-flex: 1;
-  font-size: 18px;
+  font-size: 0.18rem;
   font-weight: 400;
   text-align: center;
-  line-height: 50px;
+  line-height: 0.5rem;
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;

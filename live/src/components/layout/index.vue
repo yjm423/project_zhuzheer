@@ -2,9 +2,7 @@
   <div id="app">
     
    
-    <!-- 工具栏 -->
-   
-    
+    <!-- 工具栏 -->    
     <router-view></router-view>
     <Footer></Footer>
   </div>
