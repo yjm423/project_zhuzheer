@@ -4,21 +4,20 @@
     <span>
       <van-icon name="aim" />
     </span>
-    <div class="">住这儿</div>
-    <span class="iconfont">&#xe71c;</span>
-    <span class="iconfont">&#xe75a;</span>
-    
+    <div class="livehere">住这儿</div>
+    <div class="icon">
+      <span class="iconfont">&#xe71c;</span>
+      <span class="iconfont">&#xe75a;</span>
+    </div>
   </header>
 </template>
 
 <style lang="stylus" scoped>
-
-
 .navbar {
-  height: 0.5rem;
-//   color: #fff;
-//   background: #e54847;
-  border-bottom: 1px solid #e54847;
+  height: 0.7rem;
+  // color: #fff;
+  background: #fff;
+  padding: 0 0.2rem ;
   display: -webkit-box;
   display: -ms-flexbox;
   position: relative;
@@ -38,5 +37,29 @@
   overflow: hidden;
 }
 
+.van-icon-aim {
+  font-size: 0.28rem;
+  
+}
 
+.iconfont {
+  font-size: 0.28rem;
+  margin-left 0.25rem
+  
+}
+.icon{
+  position: absolute;
+  right 0.2rem
+}
+.livehere {
+  font-size 0.3rem;
+  // vertical-align middle
+  position absolute
+  line-height 0.5rem
+  top 0
+  bottom 0
+  left 0
+  right 0
+  margin auto 
+}
 </style>
