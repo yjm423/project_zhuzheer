@@ -1,12 +1,7 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-    <!-- app???? -->
-    <layout></layout>
-=======
-    <Layout v-if="$route.meta.keep" />
+   <Layout v-if="$route.meta.keep"></Layout>
     <router-view />
->>>>>>> f8f8000c76f44b8acf0a989d6c6a4d5c57c5a8e2
   </div>
 </template>
 
