@@ -1,0 +1,233 @@
+{
+  "id": "1359457",
+  "name": "网易云",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "637468",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "650805",
+      "name": "问号",
+      "font_class": "wenhao",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "936745",
+      "name": "桶装水",
+      "font_class": "tongzhuangshui",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "1092161",
+      "name": "钱",
+      "font_class": "qian",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "1170350",
+      "name": "搜索1",
+      "font_class": "sousuo1",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "1232402",
+      "name": "皇冠",
+      "font_class": "huangguan",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "1263298",
+      "name": "车辆",
+      "font_class": "cheliang",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "1488915",
+      "name": "音乐",
+      "font_class": "yinle",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "1799667",
+      "name": "保修",
+      "font_class": "baoxiu",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "1985047",
+      "name": "维修",
+      "font_class": "weixiu",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "3315122",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "4198406",
+      "name": "音乐",
+      "font_class": "yinle1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4217037",
+      "name": "钥匙",
+      "font_class": "yuechi",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "4933410",
+      "name": "提示",
+      "font_class": "tishi",
+      "unicode": "e75a",
+      "unicode_decimal": 59226
+    },
+    {
+      "icon_id": "5318214",
+      "name": "房屋房产",
+      "font_class": "fangwufangchan",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "5387477",
+      "name": "人脸识别",
+      "font_class": "renlianshibie",
+      "unicode": "eae1",
+      "unicode_decimal": 60129
+    },
+    {
+      "icon_id": "5652733",
+      "name": "装修",
+      "font_class": "zhuangxiu",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "5881137",
+      "name": "车辆",
+      "font_class": "cheliang1",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "6349785",
+      "name": "一卡通",
+      "font_class": "yiqiatong",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "6992737",
+      "name": "表扬",
+      "font_class": "biaoyang",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "7092361",
+      "name": "扫一扫",
+      "font_class": "saoyisao",
+      "unicode": "e73e",
+      "unicode_decimal": 59198
+    },
+    {
+      "icon_id": "7192329",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "7775077",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "8027291",
+      "name": "房屋交易",
+      "font_class": "fangwujiaoyi",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "8288841",
+      "name": "功能",
+      "font_class": "gongneng",
+      "unicode": "e84a",
+      "unicode_decimal": 59466
+    },
+    {
+      "icon_id": "8554300",
+      "name": "账号",
+      "font_class": "tubiao_zhanghao",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "8575168",
+      "name": "签到",
+      "font_class": "qiandao",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "9351318",
+      "name": "货主端加快递",
+      "font_class": "huozhuduanjiakuaidi",
+      "unicode": "e784",
+      "unicode_decimal": 59268
+    },
+    {
+      "icon_id": "9512694",
+      "name": "返回",
+      "font_class": "withdraw-fill",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "11459687",
+      "name": "账单",
+      "font_class": "zhangdan",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "11755357",
+      "name": "一键开门",
+      "font_class": "peizhitubiaosvg-",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "11984336",
+      "name": "停车",
+      "font_class": "tingchechang",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    }
+  ]
+}

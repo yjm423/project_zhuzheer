@@ -1,10 +1,38 @@
 <template>
-    <div id="nav">
-      <router-link to="/home">主页</router-link> |
-      <router-link to="/market">友邻市集</router-link> |
-      <router-link to="/person">我的</router-link> |
-      <router-link to="/housekeeper">管家</router-link> |
-      <router-link to="/community">社区</router-link> |
-      <router-view></router-view>
-    </div>
+  <div id="app">
+    <Header></Header>
+   
+    <!-- 工具栏 -->
+   
+    
+    <router-view></router-view>
+    <Footer></Footer>
+  </div>
 </template>
+
+ <script src="../package/js/swiper.min.js"></script>
+<script>
+import Footer from "./Footer";
+import Header from "./Header";
+
+
+// console.log(Swiper)
+
+
+export default {
+  components: {
+    Footer,
+    Header,
+    
+  }
+
+  
+};
+</script>
+
+<style scoped>
+img {
+  width: 100%;
+}
+
+</style>
