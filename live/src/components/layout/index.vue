@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header></Header>
+    
    
     <!-- 工具栏 -->
    
@@ -13,7 +13,7 @@
  <script src="../package/js/swiper.min.js"></script>
 <script>
 import Footer from "./Footer";
-import Header from "./Header";
+
 
 
 // console.log(Swiper)
@@ -22,7 +22,7 @@ import Header from "./Header";
 export default {
   components: {
     Footer,
-    Header,
+    
     
   }
 

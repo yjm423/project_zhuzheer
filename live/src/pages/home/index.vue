@@ -1,6 +1,7 @@
 
 <template>
   <div>
+    <Header></Header>
     <van-swipe :autoplay="3000" indicator-color="white">
       <van-swipe-item>
         <img
@@ -26,10 +27,12 @@
 </template>
 
 <script>
+import Header from "./Header";
 import Slide from "./Slide";
 export default {
   components: {
-    Slide
+    Slide,
+    Header,
   }
 };
 </script>
