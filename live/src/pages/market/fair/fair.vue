@@ -8,8 +8,8 @@
     <div class="tab">
       <van-grid square>
           
-        <van-grid-item v-for="value in 7" :key="value" icon="photo-o" text="文字" />
-        
+        <van-grid-item  icon="" text="喝水" />
+        <span class="iconfont">&#xe640;</span>
       </van-grid>
     </div>
   </div>
@@ -34,5 +34,16 @@ export default {
 }
 .van-swipe-item img {
   height: 100%;
+}
+.iconfont{
+    position: absolute;
+    top:.05rem;
+    left:.42rem;
+    font-size:20px
+}
+.van-grid-item__text{
+    font-size:.14rem;
+  
+   
 }
 </style>
