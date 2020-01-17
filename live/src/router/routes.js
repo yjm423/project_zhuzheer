@@ -1,7 +1,5 @@
 //首页
 import Home from '../pages/home'
-import Opendoor from '../pages/home/Opendoor.vue'
-import Customer from '../pages/home/Customer.vue'
 
 //友邻市集
 import Market from '../pages/market'
@@ -18,8 +16,13 @@ import Person from '../pages/person'
 //管家你好
 import Housekeeper from '../pages/housekeeper'
 
+
+
+// 点开app登录注册页面
+import member from '../pages/loginregister/member.vue'
+
 //登录页面
-import Login from '../pages/loginregister/login.vue'
+import login from '../pages/loginregister/login.vue'
 
 //注册页面
 import Register from '../pages/loginregister/register.vue'
@@ -30,84 +33,30 @@ import Error from '../pages/error/Error.vue'
 
 
 const routes = [ // 传统路由都是通过集中管理路由来完成的，所以我们建了一个路由表来统一管理路由
-  // {} //每一个对象就是一个路由的配置
-  { //路由重定向配置
-    path: '/',
-    redirect: '/home'
-  },
-  {
-    path: '/home',
-    component: Home,
-    children: [{
-        path: 'opendoor',
-        component: Opendoor,
-      },
-      {
-        path: 'customer',
-        component: Customer
-      }
-    ]
-  },
-  {
-    path: '/market',
-    redirect: "/market/fair",
+    // {} //每一个对象就是一个路由的配置
+    { //路由重定向配置
+        path: '/',
+        redirect: '/home',
+        meta: {
+            keep: true
 
-  },
-  {
-    path: "/drinking",
-    component: () => import('@/pages/market/Soduko/drinking.vue')
-    //喝水
-  },
-  {
-    path: "/educative",
-    component: () => import('@/pages/market/Soduko/educative.vue')
-    //教育
-  },
-
-  {
-    path: "/fresh",
-    component: () => import('@/pages/market/Soduko/fresh.vue')
-    //生鲜
-  },
-
-  {
-    path: "/house",
-    component: () => import('@/pages/market/Soduko/house.vue')
-    //家政
-  },
-  {
-    path: "/houseking",
-    component: () => import('@/pages/market/Soduko/houseking.vue')
-    //家居
-  },
-  {
-    path: "/mom",
-    component: () => import('@/pages/market/Soduko/mom.vue')
-    //母婴
-  },
-  {
-    path: "/pet",
-    component: () => import('@/pages/market/Soduko/pet.vue')
-    //宠物
-  },
-  {
-    path: "/travel",
-    component: () => import('@/pages/market/Soduko/travel.vue')
-    //旅游
-  }, {
-    path: "/all",
-    component: () => import('@/pages/market/Soduko/all.vue')
-    //全部
-  },
-
-
-  {
-    path: '/market',
-    component: Market,
-    meta: {
-      keep: true,
+        }
     },
+    {
+        path: '/home',
+        component: Home,
+        meta: {
+            keep: true
 
+        }
+    },
+    {
+        path: '/market',
+        component: Market,
+        meta: {
+            keep: true
+
+<<<<<<< HEAD
     children: [{
         path: 'fair',
         component: () => import('@/pages/market/fair/fair.vue'),
@@ -151,37 +100,43 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
     component: Community,
     meta: {
       keep: true
-    },
-  },
-  {
-    path: '/person',
-    component: Person,
-    meta: {
-      keep: true
-    },
-  },
-  {
-    path: '/housekeeper',
-    component: Housekeeper,
-    meta: {
-      keep: true
-    },
-  },
-  {
-    path: '/login', //动态路由 犯错高发地带
-    component: Login,
+=======
+        }
 
-  },
+    },
+    {
+        path: '/community',
+        component: Community
+>>>>>>> 855c4e34a1f5c95880ba22dc624719f88edb2952
+    },
+    {
+        path: '/person',
+        component: Person
+    },
+    {
+        path: '/housekeeper',
+        component: Housekeeper
+    },
+    {
+        path: '/member', //打开APP时看到的登录注册页面
+        component: member,
 
-  {
-    path: '/register',
-    component: Register
-  },
 
-  { //错误路由匹配写在路由表的最下方
-    path: '*',
-    component: Error
-  }
+    }, ,
+    {
+        path: '/login', //动态路由 犯错高发地带
+        component: login,
+
+    },
+    {
+        path: '/register',
+        component: Register
+    },
+
+    { //错误路由匹配写在路由表的最下方
+        path: '*',
+        component: Error
+    }
 ]
 
 export default routes
