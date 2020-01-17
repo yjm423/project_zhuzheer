@@ -1,4 +1,3 @@
-  
 //首页
 import Home from '../pages/home'
 import Opendoor from '../pages/home/Opendoor.vue'

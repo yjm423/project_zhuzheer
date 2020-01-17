@@ -1,14 +1,20 @@
 <template>
   <div id="app">
 
+  <!-- <Footer></Footer> -->
+    <Footer v-if="$route.meta.keep"></Footer>
+    <router-view />
+    
+
   </div>
 </template>
 
 <script>
-import Layout from "./components/layout";
+import Footer from "./components/layout/Footer.vue";
 export default {
   components: {
-    Layout
+
+    Footer
   }
 };
 </script>
