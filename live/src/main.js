@@ -28,14 +28,8 @@ Vue.use(Icon);
 
 Vue.config.productionTip = false
 
-new Vue({ <<
-        << << < HEAD
-        router,
-        render: h => h(App)
-    }).$mount('#app') ===
-    === =
+new Vue({
     router,
     store,
     render: h => h(App)
-}).$mount('#app') >>>
-    >>> > 99405 b26c7dd8d0ccf2f1ba9317e9bc8597b1ab8
+}).$mount('#app')
