@@ -5,6 +5,5 @@
       <router-link to="/person">我的</router-link> |
       <router-link to="/housekeeper">管家</router-link> |
       <router-link to="/community">社区</router-link> |
-      <router-view></router-view>
     </div>
 </template>
