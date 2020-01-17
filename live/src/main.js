@@ -13,10 +13,6 @@ Vue.use(VueLazyload)
 
 
 
-Vue.use(Vant);
-
-import Vant from 'vant';
-
 import 'vant/lib/index.css';
 import { Icon } from 'vant';
 
