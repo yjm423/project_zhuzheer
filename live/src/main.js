@@ -7,27 +7,18 @@ import './assets/rem.js'
 import VueLazyload from 'vue-lazyload'
 import './assets/icon/iconfont.css'
 import Vant from 'vant';
+import './lib/mui/css/mui.min.css'
 
 import 'vant/lib/index.css';
-import { Icon } from 'vant';
 
-import { Swipe, SwipeItem } from 'vant';
 Vue.use(VueLazyload)
 Vue.use(Vant);
 
 
 
-import { Icon } from 'vant';
-
-import { Swipe, SwipeItem } from 'vant';
-
-// import rem from './assets/rem'
 
 
-Vue.use(Swipe).use(SwipeItem);
-
-Vue.use(Icon);
-
+// import rem from './assets/rem
 
 
 Vue.config.productionTip = false

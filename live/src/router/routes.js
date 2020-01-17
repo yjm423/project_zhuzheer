@@ -39,13 +39,14 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
     path: '/home',
     component: Home,
     children: [{
-      path: 'opendoor',
-      component: Opendoor,
-    },
-    {
-      path: 'customer',
-      component: Customer
-    }]
+        path: 'opendoor',
+        component: Opendoor,
+      },
+      {
+        path: 'customer',
+        component: Customer
+      }
+    ]
   },
   {
     path: '/market',
@@ -53,28 +54,81 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
 
   },
   {
+    path: "/drinking",
+    component: () => import('@/pages/market/Soduko/drinking.vue')
+    //喝水
+  },
+  {
+    path: "/educative",
+    component: () => import('@/pages/market/Soduko/educative.vue')
+    //教育
+  },
+
+  {
+    path: "/fresh",
+    component: () => import('@/pages/market/Soduko/fresh.vue')
+    //生鲜
+  },
+
+  {
+    path: "/house",
+    component: () => import('@/pages/market/Soduko/house.vue')
+    //家政
+  },
+  {
+    path: "/houseking",
+    component: () => import('@/pages/market/Soduko/houseking.vue')
+    //家居
+  },
+  {
+    path: "/mom",
+    component: () => import('@/pages/market/Soduko/mom.vue')
+    //母婴
+  },
+  {
+    path: "/pet",
+    component: () => import('@/pages/market/Soduko/pet.vue')
+    //宠物
+  },
+  {
+    path: "/travel",
+    component: () => import('@/pages/market/Soduko/travel.vue')
+    //旅游
+  }, {
+    path: "/all",
+    component: () => import('@/pages/market/Soduko/all.vue')
+    //全部
+  },
+
+
+  {
     path: '/market',
     component: Market,
     meta: {
-      keep: true
+      keep: true,
     },
 
     children: [{
-      path: 'fair',
-      component: () => import('@/pages/market/fair/fair.vue'),
-      meta: {
-        keep: true
+        path: 'fair',
+        component: () => import('@/pages/market/fair/fair.vue'),
+        meta: {
+          keep: true
+        },
+      }, {
+        path: 'community',
+        component: () => import('@/pages/market/community/community.vue'),
+        meta: {
+          keep: true
+        },
       },
-    }, {
-      path: 'community',
-      component: () => import('@/pages/market/community/community.vue')
+      {
+        path: 'convenience',
+        component: () => import('@/pages/market/convenience/convenience.vue'),
+        meta: {
+          keep: true
+        },
 
-    },
-    {
-      path: 'convenience',
-      component: () => import('@/pages/market/convenience/convenience.vue')
-
-    }
+      }
     ],
 
 
