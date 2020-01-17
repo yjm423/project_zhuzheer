@@ -18,7 +18,7 @@
       </router-link>
     </span> 
     <div class="nav">
-        <router-link to="/market/fair">市集</router-link>
+        <router-link to="/market/fair" >市集</router-link>
         <router-link to="/market/community">社区拼团</router-link>
         <router-link to="/market/convenience">便利</router-link>
     </div>
@@ -37,23 +37,33 @@ export default {
 };
 </script>
 <style scoped>
+#app{
+  background:#fff;
+
+}
  .IP {
   width: 2.4rem;
-  border: .01rem solid #ccc;
-  margin: 0.1rem 0.15rem;
-  border-radius: 0.2rem;
+ 
+  margin: 0.1rem 0.15rem; 
+    border-radius: 0.2rem;
+  
 }
 .inp {
-  margin-left: 0.2rem;
   border: 0;
   text-align: center;
+  background:#ccc;
+   border-radius: 0.2rem;
+   width: 2.4rem; 
+   height:.24rem;
+   font-size:.17rem
+ 
 }
 .van-search__content {
   border-radius: 0.15rem !important;
 }
 .sPan {
   position: absolute;
-  top:0.07rem;
+  top:0.08rem;
   right: 0.67rem;
   font-size: 0.26rem;
 }
@@ -62,7 +72,7 @@ export default {
 }
 .POT {
   position: absolute;
-  top: .07rem;
+  top: .08rem;
   right: 0.22rem;
   font-size: 0.26rem;
 }
@@ -84,4 +94,10 @@ export default {
   color:black;
   border-bottom: .01rem solid black
 }
+/* .active {
+    color: #f03d37;
+}
+.van-tabbar-item--active {
+    color: #f03d37;
+} */
 </style>
