@@ -91,7 +91,27 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
         ],
 
 
+
+
+
     },
+    {
+        path: '/search',
+        component: () =>
+            import ('@/pages/market/search.vue')
+    },
+    {
+        path: '/plan',
+        component: () =>
+            import ('@/pages/market/plan.vue')
+    },
+    {
+        path: '/shop_car',
+        component: () =>
+            import ('@/pages/market/shop_car.vue')
+    },
+
+
     {
         path: '/search',
         component: () =>
@@ -110,10 +130,12 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
 
     {
         path: '/community',
+
         component: Community,
         meta: {
             keep: true
         },
+
     },
     {
         path: '/person',
