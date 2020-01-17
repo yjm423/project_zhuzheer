@@ -22,7 +22,7 @@
     <!--邀请码 -->
     <div class="invitation">
         <p>扫描邀请码注册</p>
-        <span>去逛逛</span>
+        <router-link to="/home">  <span>去逛逛</span></router-link>
     </div>
   </div>
   </div>
@@ -35,7 +35,7 @@ export default {};
 </script>
 
 
- <style>
+ <style soped> 
  .memder{
      width: 100%;
      height: 100%;
