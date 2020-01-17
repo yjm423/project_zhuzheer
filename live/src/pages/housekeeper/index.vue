@@ -24,18 +24,18 @@
 <style lang="stylus"  scoped >
      .main
         width 100%
-        height 15rem
+        height 1rem
         border .1rem solid  red
     .yuan
-        width 10rem
+        width 5rem
         height 3rem
         margin 0 auto
         text-align center
         line-height 3rem
         border .1px solid red
-        border-radius 2rem
+        border-radius 0.2rem
         a
            color red
            text-decoration none 
-           font-size 1.2rem
+           font-size .12rem
 </style>
