@@ -44,19 +44,57 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
     path: '/',
     redirect: '/home'
   },
+  /************************************************
+   * 主页路由
+   */
   {
     path: '/home',
     component: Home,
-    children: [{
-        path: 'opendoor',
-        component: Opendoor,
-      },
-      {
-        path: 'customer',
-        component: Customer
-      }
-    ]
   },
+  //服务导航
+  {
+    path: '/opendoor',
+    component: () =>
+      import('@/pages/home/tool/OpenDoor.vue')
+  },
+  {
+    path: '/housebill',
+    component: () =>
+      import('@/pages/home/tool/HouseBill.vue')
+  },
+  {
+    path: '/visitors',
+    component: () =>
+      import('@/pages/home/tool/Visitors.vue')
+  },
+  {
+    path: '/repair',
+    component: () =>
+      import('@/pages/home/tool/Repair.vue')
+  },
+  {
+    path: '/mycar',
+    component: () =>
+      import('@/pages/home/tool/MyCar.vue')
+  },
+  {
+    path: '/ems',
+    component: () =>
+      import('@/pages/home/tool/EMS.vue')
+  },
+  {
+    path: '/scan',
+    component: () =>
+      import('@/pages/home/tool/Scan.vue')
+  },
+  {
+    path: '/checkmore',
+    component: () =>
+      import('@/pages/home/tool/CheckMore.vue')
+  },
+  /*******************************************************
+   * 友邻市集
+   */
   {
     path: '/market',
     redirect: "/market/fair",
