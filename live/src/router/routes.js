@@ -122,48 +122,48 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
   },
   // Soduko路由
   {
-    path: '/all',
+    path: '/market/fair/all',
     component: () =>
       import('@/pages/market/Soduko/all.vue')
   },
   //
   {
-    path: '/drinking',
+    path: '/market/fair/drinking',
     component: () =>
       import('@/pages/market/Soduko/drinking.vue')
   },
   {
-    path: '/educative',
+    path: '/market/fair/educative',
     component: () =>
       import('@/pages/market/Soduko/educative.vue')
   },
   {
-    path: '/fresh',
+    path: '/market/fair/fresh',
     component: () =>
       import('@/pages/market/Soduko/fresh.vue')
   },
   {
-    path: '/house',
+    path: '/market/fair/house',
     component: () =>
       import('@/pages/market/Soduko/house.vue')
   },
   {
-    path: '/houseking',
+    path: '/market/fair/houseking',
     component: () =>
       import('@/pages/market/Soduko/houseking.vue')
   },
   {
-    path: '/mom',
+    path: '/market/fair/mom',
     component: () =>
       import('@/pages/market/Soduko/mom.vue')
   },
   {
-    path: '/pet',
+    path: '/market/fair/pet',
     component: () =>
       import('@/pages/market/Soduko/pet.vue')
   },
   {
-    path: '/travel',
+    path: '/market/fair/travel',
     component: () =>
       import('@/pages/market/Soduko/travel.vue')
   },
