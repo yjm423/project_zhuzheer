@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div class="layout">
     <Header></Header>
     <Container></Container>
     <Footer></Footer>
@@ -20,4 +20,18 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  html,body{
+    height: 100%;
+  }
+  .layout{
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+</style>
+
+
 
