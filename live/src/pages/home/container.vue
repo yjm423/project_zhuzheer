@@ -177,9 +177,9 @@ export default {
 }
 
 .topWrap {
-  padding: 0.1rem 0.1rem 0.1rem;
-  // display flex
-  // flex-direction column
+  padding: 0.1rem 0.1rem 0.6rem;
+  display flex
+  flex-direction column
  
   height: 6rem;
   width: 100%;

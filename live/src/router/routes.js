@@ -68,6 +68,21 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
       import('@/pages/home/tool/Visitors.vue')
   },
   {
+    path: '/newVisitors',
+    component: () =>
+      import('@/pages/home/tool/NewVisitors.vue')
+  },
+  {
+    path: '/verify',
+    component: () =>
+      import('@/pages/home/tool/Verify.vue')
+  },
+  {
+    path: '/chooseHouse',
+    component: () =>
+      import('@/pages/home/tool/ChooseHouse.vue')
+  },
+  {
     path: '/repair',
     component: () =>
       import('@/pages/home/tool/Repair.vue')
@@ -86,6 +101,11 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
     path: '/scan',
     component: () =>
       import('@/pages/home/tool/Scan.vue')
+  },
+  {
+    path: '/autopay',
+    component: () =>
+      import('@/pages/home/tool/AutoPay.vue')
   },
   {
     path: '/checkmore',

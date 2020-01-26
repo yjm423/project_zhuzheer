@@ -1,38 +1,27 @@
 <template>
-  <div class="wrap">
-    <div class="inner">
+  <div id="visitors">
+    <div class="visitor-record">
       <header>
-        <i class="fa fa-chevron-left" @click="goback"></i>
-        <span>完成</span>
+        <i class="fa fa-angle-left fa-2x" @click="goback"></i>
       </header>
-      <div class="visit">
-        <h3>新邀请</h3>
-        <p class="addr">居住地址：例如杭州某某小区</p>
-        <ul class="register-info">
-          <li class="bottom-line">访客姓名</li>
-          <li class="bottom-line">来访人数</li>
-          <li class="bottom-line">来访事由</li>
-          <li>有效期至</li>
-        </ul>
+      <h3>访客邀请</h3>
+      <p class="addr">地址：例如杭州金沙阳光公寓</p>
+      <div>
+        <img src="../../../assets/img/visitor-logo.png" alt />
+        <p>暂无邀请记录</p>
       </div>
     </div>
-    <div class="car">
-      <li>
-        <span>是否驾车</span> 
-        <van-switch v-model="checked"  />
-      </li>
-      <p>如驾车，填写车牌后，访客到访时车闸将自动打开</p>
+
+    <div class="go-visit">
+      
+      <router-link to='/newVisitors' tag='span'>+</router-link>
+      <p>去邀请</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      checked: false
-    };
-  },
   methods: {
     goback() {
       this.$router.go(-1);
@@ -42,68 +31,53 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.inner {
+#visitors {
+  height: 100%;
   background-color: #fff;
-  padding: 0.2rem 0.2rem 0;
+}
+
+.visitor-record {
+  padding: 0.2rem;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  height: 0.4rem;
+  text-align: left;
 }
 
-header i {
+.fa-chevron-left {
   font-size: 0.2rem;
-}
-
-header span {
-  width: 0.6rem;
-  height: 0.3rem;
-  line-height: 0.3rem;
-  background-color: #ccc;
-  border-radius: 0.1rem;
 }
 
 h3 {
   text-align: left;
-  margin-top: 0.3rem;
 }
 
-.addr {
+#visitors .addr {
   text-align: left;
 }
 
-.register-info {
-  text-align: left;
+#visitors img {
+  height: 1.4rem;
+  width: 1.8rem;
+  margin: 0.5rem auto;
+  display: block;
 }
 
-li {
-  height: 0.5rem;
-  line-height: 0.5rem;
-  
+
+.go-visit {
+  width: 100%;
+  height: 0.7rem;
+  padding-top: 0.1rem;
+  border-top :1px solid #ccc
+  position: absolute;
+  bottom: 0;
 }
 
-.car {
-  text-align: left;
-  margin-top: 0.1rem;
-}
-
-.car li {
-  background-color: #fff;
-  padding: 0 0.2rem;
-  display flex
-  justify-content space-between
-}
-
-.car p {
-  margin: 0.1rem 0.2rem;
-}
-.van-switch{
-    margin-top 0.1rem
-    width 0.5rem
-    border 1px solid #ccc
-}
-.bottom-line {
-  border-bottom: 1px solid #ccc;
+.go-visit span {
+  font-size: 0.4rem;
+  font-weight: 100;
+  color: #e86861;
 }
 </style>

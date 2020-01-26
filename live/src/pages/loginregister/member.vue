@@ -1,6 +1,5 @@
 <template>
-<div>
-  <div class="memder">
+  <div class="member">
     <!-- 标题 -->
     <div class="text">
       <h3>关注权益，点评服务</h3>
@@ -12,19 +11,23 @@
     </div>
     <!-- 登录 -->
     <div class="btn1">
-      <router-link to="/login"> <button>登录</button></router-link>
-       
+      <router-link to="/register">
+        <button>注册</button>
+      </router-link>
     </div>
     <!-- 注册 -->
     <div class="btn2">
-        <router-link to="/register"> <button>注册</button></router-link>
+      <router-link to="/login">
+        <button>登录</button>
+      </router-link>
     </div>
     <!--邀请码 -->
     <div class="invitation">
-        <p>扫描邀请码注册</p>
-        <router-link to="/home">  <span>去逛逛</span></router-link>
+      <p>扫描邀请码注册</p>
+      <router-link to="/home">
+        <span>去逛逛</span>
+      </router-link>
     </div>
-  </div>
   </div>
 </template>
 
@@ -35,12 +38,15 @@ export default {};
 </script>
 
 
- <style soped> 
- .memder{
-     width: 100%;
-     height: 100%;
-     box-sizing: border-box;
- }
+ <style soped>
+.member {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 0.3rem;
+  /* box-sizing: border-box; */
+}
+
 .text h3 {
   text-align: center;
   font-size: 0.25rem;
@@ -52,58 +58,45 @@ export default {};
   color: #555555;
 }
 /* 图片 */
-.logo img{
-    width: 3.7rem;
-    height: 2.73rem;
-}
-/* 登录 */
-.btn1 {
-      display: flex;
-     margin-top: -0.9rem;
-}
-.btn1 button{
-    width: 3rem;
-    height: 0.5rem;
-    background-color: brown;
-    border-radius: .2rem;
-    outline: none;
-    border: 0;
-    color:#fff;
-}
-.btn1  a{
-  margin: 0 auto;
+.logo img {
+  width: 3.7rem;
+  height: 2.73rem;
 }
 /* 注册 */
-.btn2{
-   display: flex;
+button {
+  width: 90%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  border-radius: 0.25rem!important;
+  font-size: 0.16rem!important;
+  border: 0;
+  letter-spacing: 0.02rem;
+
 }
-.btn2 button{
-    width: 3rem;
-    height: 0.5rem;
-    background-color: #fff;
-    margin: 0 auto;
-    margin-top: 0.1rem;
-    border-radius: .2rem;
-    border: 1px solid red;   
-    outline: none;  
-    color: red;
-    line-height: 0.5rem;
+.btn1 button {
+  background-color: #da645d;
+  outline: none;
+  color: #fff;
 }
-.btn2  a{
+
+/* 登录 */
+
+.btn2 button {
+  margin-top: 0.2rem;
+  border: 1px solid red;
+  color: red;
+}
+.btn2 a {
   margin: 0 auto;
   line-height: 0.5rem;
 }
 /* 邀请码 */
-.invitation{
-    display: flex;
-    justify-content:space-between;
-    padding: 0 0.42rem;
+.invitation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0.2rem ;
+  letter-spacing: 0.02rem;
 }
-.invitation p{
-    font-size: 0.24rem;  
-}
-.invitation span{
-    font-size: 0.24rem;
-    padding-top: 0.25rem;
-}
+
+
 </style>

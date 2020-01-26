@@ -1,40 +1,72 @@
 <template>
-  <div class="wrap">
-    <header>11111111</header>
-    <div class="con">
-      <div class="inner"></div>
-      <div class="inner2"></div>
+  <div id="ems">
+    <header>
+      <i class="fa fa-angle-left fa-2x" @click="goback"></i>
+    </header>
+    <h2>快递查询</h2>
+    <div class="addr">
+      <p>杭州金沙阳光公寓</p>
+      
+      <h5>
+       
+        <span>杭州金沙阳光公寓几幢几单元几楼几室</span>
+        <i class="fa fa-question-circle"></i>
+      </h5>
     </div>
+    <span class="nodata">暂无数据</span>
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    goback() {
+      this.$router.go(-1);
+    }
+  }
+};
+</script>
+
 <style lang="stylus" scoped>
+#ems {
+  height: 100%;
+  background-color: #fff;
+  padding: 0.2rem;
+  position: relative;
+}
+
 header {
-  height: 0.5rem;
   width: 100%;
-  background-color: red;
-  position: fixed;
-  z-index: 1;
+  height: 0.4rem;
+  text-align: left;
 }
-.wrap{
-    height 100%
-    display flex
-    flex-direction column
+
+.fa-chevron-left {
+  font-size: 0.2rem;
 }
-.con {
-  overflow: auto;
+
+h2 {
+  text-align: left;
+  margin: 0.2rem 0;
+}
+
+#ems .addr {
+  text-align: left;
+}
+
+h5 {
+  font-size: 0.18rem;
+  display flex
+}
+h5 span{
   flex 1
 }
-
-.inner {
-  height: 10rem;
-  width: 100%;
-  background-color: blue;
+h5 i{
+  font-size 0.14rem
 }
-
-.inner2 {
-  height: 5rem;
-  width: 100%;
-  background-color: yellow;
+.nodata {
+  display block
+  margin-top: 1.5rem;
+  color #ccc
 }
 </style>

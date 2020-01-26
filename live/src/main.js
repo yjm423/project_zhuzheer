@@ -10,9 +10,9 @@ import Vant from 'vant';
 import './lib/mui/css/mui.min.css'
 
 import 'vant/lib/index.css';
-
+import { Toast } from 'vant';
 Vue.use(VueLazyload)
-
+Vue.use(Toast);
 
 
 
