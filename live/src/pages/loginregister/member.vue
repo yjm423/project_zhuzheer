@@ -24,7 +24,10 @@
     <!--邀请码 -->
     <div class="invitation">
       <p>扫描邀请码注册</p>
-      <router-link to="/home">
+
+      <!-- 如果没有登录注册 直接跳到选择社区 -->
+      <!-- 属于路由拦截 -->
+      <router-link to="/home" router-link-active='active'>
         <span>去逛逛</span>
       </router-link>
     </div>
@@ -98,5 +101,11 @@ button {
   letter-spacing: 0.02rem;
 }
 
-
+.invitation span{
+  color: #8f8f94;
+  
+}
+.invitation span:hover{
+  color: #da645d;
+}
 </style>

@@ -115,6 +115,6 @@ h2 {
     line-height 0.5rem
     border-radius 0.1rem
     color #919191
-    margin-top 0.6rem
+    margin-top 0.4rem
 }
 </style>

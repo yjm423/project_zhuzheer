@@ -256,6 +256,9 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
       keep: true
     },
   },
+  /**
+   * 登录注册
+   */
   {
     path: '/stroll', //去逛逛
     component: stroll,
@@ -274,6 +277,11 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
   {
     path: '/register',
     component: Register
+  },
+  {
+    path: '/choosecommunity',
+    component: () =>
+    import('@/pages/loginregister/choosecommunity.vue')
   },
 
   { //错误路由匹配写在路由表的最下方
