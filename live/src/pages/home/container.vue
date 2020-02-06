@@ -175,7 +175,9 @@ export default {
   height: 100%;
   width: 100%;
 }
-
+::-webkit-scrollbar {
+  width: 0px;
+}
 .topWrap {
   padding: 0.1rem 0.1rem 0.6rem;
   display flex

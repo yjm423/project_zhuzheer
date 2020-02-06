@@ -11,10 +11,13 @@ import './lib/mui/css/mui.min.css'
 
 import 'vant/lib/index.css';
 import { Toast } from 'vant';
-Vue.use(VueLazyload)
+import { Tag } from 'vant';
+import { Step, Steps } from 'vant';
+Vue.use(VueLazyload);
 Vue.use(Toast);
-
-
+Vue.use(Tag);
+Vue.use(Step);
+Vue.use(Steps);
 
 import 'vant/lib/index.css';
 Vue.use(Vant);

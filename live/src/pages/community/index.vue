@@ -47,7 +47,7 @@
         <div class="comment-list">
           <div class="avatar">
             <!-- 头像 -->
-            <img src="../../assets/img/user-avatar.png" alt class="avatarPic"/>
+            <img src="../../assets/img/user-avatar.png" alt class="avatarPic" />
             <div>
               <!-- 用户名 -->
               <h5>yjm</h5>
@@ -86,28 +86,80 @@
           </div>
           <!-- 评论区 -->
           <div class="comment-area">
-              <div class="display-info">
-                  <span>评论人：</span>
-                  <p>好的业主，安排维修</p>
-              </div>
-              <div class="info-input">
-                   <img src="../../assets/img/user-avatar.png" alt class="avatarPic" />
-                    <input type="text" placeholder="评论">
-              </div>
+            <div class="display-info">
+              <span>评论人：</span>
+              <p>好的业主，安排维修</p>
+            </div>
+            <div class="info-input">
+              <img src="../../assets/img/user-avatar.png" alt class="avatarPic" />
+              <input type="text" placeholder="评论" />
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- 弹出框 -->
+    <div id="btn" @click="showprop">+</div>
+    <!-- <van-cell is-link @click="showPopup">展示弹出层</van-cell> -->
+    <van-popup v-model="show" closeable close-icon-position="bottom-right">
+      <router-link to="/postmsg" class="post-list">
+        <i class="fa fa-file-text-o"></i>
+        <span>
+          <h4>发布帖子</h4>
+          <p>与邻居分享心情，分享见闻</p>
+        </span>
+      </router-link>
+      <router-link to="/usedmarket" class="post-list">
+        <i class="fa fa-exchange"></i>
+        <span>
+          <h4>发布友两手</h4>
+          <p>闲置物品，邻里交易更放心</p>
+        </span>
+      </router-link>
+      <router-link to="/myactivity" class="post-list">
+        <i class="fa fa-futbol-o"></i>
+        <span>
+          <h4>发布活动</h4>
+          <p>和邻里相约，热闹非凡</p>
+        </span>
+      </router-link>
+      <router-link to="/neighborhelp" class="post-list">
+        <i class="fa fa-heartbeat"></i>
+        <span>
+          <h4>帮忙</h4>
+          <p>邻里互相帮助，社区更温暖</p>
+        </span>
+      </router-link>
+    </van-popup>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      show: false
+    };
+  },
+  methods: {
+    showprop() {
+      this.show = true;
+    }
+  }
+};
+</script>
 
 <style lang="stylus" scoped>
 #community {
   height: 100%;
   overflow: auto;
-  padding-bottom 0.6rem
+  padding-bottom: 0.6rem;
+  position: relative;
 }
-
+::-webkit-scrollbar {
+  width: 0px;
+}
 header {
   padding: 0.2rem;
   background-color: #fff;
@@ -186,7 +238,7 @@ nav ul li:first-child {
   background-color: #fff;
   padding: 0.2rem;
   text-align: left;
-   border-radius: 0.05rem;
+  border-radius: 0.05rem;
 }
 
 .active .title {
@@ -221,72 +273,129 @@ nav ul li:first-child {
   padding: 0.2rem;
   background-color: #fff;
   margin-top: 0.15rem;
-  text-align left 
+  text-align: left;
   border-radius: 0.05rem;
 }
-.comment-list .avatar{
-    display flex
-    text-align left 
-    height 0.4rem
 
+.comment-list .avatar {
+  display: flex;
+  text-align: left;
+  height: 0.4rem;
 }
-.comment-list .avatar h5{
-    color #000
-    font-size 0.16rem
-    font-weight 700
-}
-.comment-list .avatar img{
-    margin-right 0.1rem
-    width 0.4rem
 
+.comment-list .avatar h5 {
+  color: #000;
+  font-size: 0.16rem;
+  font-weight: 700;
 }
-.avatarPic{
-    width 0.4rem
-    height 0.4rem
-}
-.comment-list h4{
-    margin 0.2rem 0
-}
-.comment-list .pic{
-    display flex
-    flex-direction row
-    flex-wrap wrap
-}
-.comment-list .pic img{
-    width 1rem
-    height 1rem
 
+.comment-list .avatar img {
+  margin-right: 0.1rem;
+  width: 0.4rem;
 }
-.pic li{
-    margin-right 0.05rem
-    margin-bottom 0.05rem
-    border-bottom 0
-}
-.comment-list .time{
-    display flex
-    justify-content space-between
-    color #b9b9b9
-    margin 0.1rem 0
-}
-.comment-list .like span{
-    margin-left 0.2rem
-}
-.comment-list .like span i{
-    margin 0 0.1rem
-}
-.comment-area .display-info{
-    display flex
-    font-size 0.16rem
-}
-.comment-area .display-info p{
-    font-size 0.16rem
-}
-.comment-area .info-input{
-    display flex
 
+.avatarPic {
+  width: 0.4rem;
+  height: 0.4rem;
 }
-.comment-area .info-input input{
-    margin-left 0.2rem
-    border-radius 0.2rem
+
+.comment-list h4 {
+  margin: 0.2rem 0;
+}
+
+.comment-list .pic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.comment-list .pic img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.pic li {
+  margin-right: 0.05rem;
+  margin-bottom: 0.05rem;
+  border-bottom: 0;
+}
+
+.comment-list .time {
+  display: flex;
+  justify-content: space-between;
+  color: #b9b9b9;
+  margin: 0.1rem 0;
+}
+
+.comment-list .like span {
+  margin-left: 0.2rem;
+}
+
+.comment-list .like span i {
+  margin: 0 0.1rem;
+}
+
+.comment-area .display-info {
+  display: flex;
+  font-size: 0.16rem;
+}
+
+.comment-area .display-info p {
+  font-size: 0.16rem;
+}
+
+.comment-area .info-input {
+  display: flex;
+}
+
+.comment-area .info-input input {
+  margin-left: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+// 按钮弹出框
+#btn {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: #ec7f78;
+  position: fixed;
+  bottom: 1rem;
+  right: 0.2rem;
+  font-size: 0.3rem;
+  color: #ffffff;
+  line-height: 0.6rem;
+}
+
+.van-popup {
+  height: 50%;
+  width: 70%;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  right: 0;
+}
+
+.post-list {
+  display: flex;
+  text-align: left;
+  height: 0.7rem;
+}
+
+.post-list h4 {
+  color: #404040;
+}
+
+.post-list i {
+  font-size: 0.22rem;
+  margin-right: 0.2rem;
+  margin-top: 0.1rem;
+  color: #ccc;
+}
+
+.post-list p {
+  font-size: 0.12rem;
+  letter-spacing: 0.01rem;
+  color: #ccc;
 }
 </style>

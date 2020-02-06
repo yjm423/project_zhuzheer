@@ -85,8 +85,8 @@
         <div class="time">
           <ul>
             <li>
-              剩余<br>
-              时间
+              剩余
+              <br />时间
             </li>
             <li>
               <van-count-down :time="time" format="DD" />天
@@ -99,14 +99,17 @@
                 <template v-slot="timeData">
                   <span class="item">
                     {{ timeData.minutes }}
-                    <br /><span class="fen">分</span>
+                    <br />
+                    <span class="fen">分</span>
                   </span>
                 </template>
               </van-count-down>
             </li>
           </ul>
         </div>
-        <div class="money"><span>￥39</span></div>
+        <div class="money">
+          <span>￥39</span>
+        </div>
         <p>{{item2.h}}</p>
         <div class="group">2份成团.已参团{{item2.num}}份</div>
         <van-button type="default">参团</van-button>
@@ -114,8 +117,11 @@
     </div>
     <div class="titl-1 titl-1-1">
       <h2>母婴精选</h2>
-       <span>&nbsp;.&nbsp;给宝宝暖心好物</span>
-       <p class="titl-11">看更多 <van-icon name="arrow" /></p>
+      <span>&nbsp;.&nbsp;给宝宝暖心好物</span>
+      <p class="titl-11">
+        看更多
+        <van-icon name="arrow" />
+      </p>
     </div>
 
     <div class="shopping">
@@ -126,8 +132,11 @@
     </div>
     <div class="titl-1 titl-1-1">
       <h2>健康服务</h2>
-       <span>&nbsp;.&nbsp;呵护全家安康</span>
-       <p class="titl-11">看更多 <van-icon name="arrow" /></p>
+      <span>&nbsp;.&nbsp;呵护全家安康</span>
+      <p class="titl-11">
+        看更多
+        <van-icon name="arrow" />
+      </p>
     </div>
 
     <div class="shopping">
@@ -138,8 +147,11 @@
     </div>
     <div class="titl-1 titl-1-1">
       <h2>宠物生活</h2>
-       <span>&nbsp;.&nbsp;健康养宠生活</span>
-       <p class="titl-11">看更多 <van-icon name="arrow" /></p>
+      <span>&nbsp;.&nbsp;健康养宠生活</span>
+      <p class="titl-11">
+        看更多
+        <van-icon name="arrow" />
+      </p>
     </div>
 
     <div class="shopping">
@@ -150,8 +162,11 @@
     </div>
     <div class="titl-1 titl-1-1">
       <h2>旅游教育</h2>
-       <span>.在旅行中探索美好</span>
-       <p class="titl-11">看更多 <van-icon name="arrow" /></p>
+      <span>.在旅行中探索美好</span>
+      <p class="titl-11">
+        看更多
+        <van-icon name="arrow" />
+      </p>
     </div>
 
     <div class="shopping">
@@ -162,8 +177,11 @@
     </div>
     <div class="titl-1 titl-1-1">
       <h2>智能家居</h2>
-       <span>&nbsp;.&nbsp;轻松享受新生活</span>
-       <p class="titl-11">看更多 <van-icon name="arrow" /></p>
+      <span>&nbsp;.&nbsp;轻松享受新生活</span>
+      <p class="titl-11">
+        看更多
+        <van-icon name="arrow" />
+      </p>
     </div>
 
     <div class="shopping">
@@ -174,8 +192,11 @@
     </div>
     <div class="titl-1 titl-1-1">
       <h2>食品</h2>
-       <span>&nbsp;.&nbsp;米面粮油休闲零食</span>
-       <p class="titl-11">看更多 <van-icon name="arrow" /></p>
+      <span>&nbsp;.&nbsp;米面粮油休闲零食</span>
+      <p class="titl-11">
+        看更多
+        <van-icon name="arrow" />
+      </p>
     </div>
 
     <div class="shopping">
@@ -185,7 +206,7 @@
       </div>
     </div>
     <div class="images">
-      <img src="../../../assets/img/101.jpg" alt="">
+      <img src="../../../assets/img/101.jpg" alt />
     </div>
     <router-view />
   </div>
@@ -363,28 +384,28 @@ export default {
   text-align: left;
   margin-left: 0.15rem;
   font-size: 0.2rem;
-  
 }
 .shopping_2 .shopping_3 {
   /* width: 1.12rem; */
   display: inline-block;
   position: relative;
-   height: 1.37rem; 
-   /* border: 1px solid #ccc;
+  height: 1.37rem;
+  /* border: 1px solid #ccc;
   border-radius: 0.1rem; */
-  margin-right: .1rem;
-}.shopping_2 .shopping_3 p{
-  text-align: left;
-  padding-left:.1rem;
-  margin-top:.05rem;
-  color:black;
-  font-size: .14rem;
+  margin-right: 0.1rem;
 }
-.shopping_2 .shopping_3 .group{
+.shopping_2 .shopping_3 p {
   text-align: left;
-  padding-left:.1rem;
-  font-size:.12rem;
-  color:rgb(167, 164, 164)
+  padding-left: 0.1rem;
+  margin-top: 0.05rem;
+  color: black;
+  font-size: 0.14rem;
+}
+.shopping_2 .shopping_3 .group {
+  text-align: left;
+  padding-left: 0.1rem;
+  font-size: 0.12rem;
+  color: rgb(167, 164, 164);
 }
 .shopping_2 .time {
   width: 1.5rem;
@@ -392,13 +413,14 @@ export default {
   position: absolute;
   left: 0;
   bottom: 0.05rem;
-}.shopping_2 .money span{
+}
+.shopping_2 .money span {
   position: absolute;
-  right:.1rem;
-  bottom:0;
-  margin-bottom:.1rem;
-  font-size:.2rem;
-  color:rgb(226, 73, 35)
+  right: 0.1rem;
+  bottom: 0;
+  margin-bottom: 0.1rem;
+  font-size: 0.2rem;
+  color: rgb(226, 73, 35);
 }
 .shopping_2 .time ul li {
   display: inline-block;
@@ -407,16 +429,16 @@ export default {
   width: 0.4rem;
   border-radius: 0.05rem;
   color: #fff;
-  font-size:.13rem;
-  
+  font-size: 0.13rem;
 }
- .shopping_2 .time ul li .van-count-down{
-    color: #fff;
- }
+.shopping_2 .time ul li .van-count-down {
+  color: #fff;
+}
 .shopping_2 .time ul li .item {
   color: #fff;
-}.shopping_2 .time ul li .fen{
-  font-size:.13rem;
+}
+.shopping_2 .time ul li .fen {
+  font-size: 0.13rem;
 }
 .shopping_2 .time ul li:nth-child(1) {
   margin-left: 0.1rem;
@@ -446,46 +468,48 @@ export default {
   /* overflow: scroll;
     white-space: nowrap; */
 }
-.van-button{
-position: absolute;
-right:.15rem;
-bottom:-.58rem;
-border-radius: .2rem;
-    padding: 0 .27rem;
-    background:rgb(226, 73, 35);
-    color:#fff
+.van-button {
+  position: absolute;
+  right: 0.15rem;
+  bottom: -0.58rem;
+  border-radius: 0.2rem;
+  padding: 0 0.1rem;
+  text-align: center;
+  background: rgb(226, 73, 35);
+  color: #fff;
+  width: 0.6rem;
+  height: 0.4rem;
 }
-.titl-1-1 h2{
- text-align: left;
+.titl-1-1 h2 {
+  text-align: left;
   margin-left: -1.58rem;
   font-size: 0.2rem;
-  display: inline-block
+  display: inline-block;
 }
-.titl-1-1 span{
-  font-size:.14rem;
-  color:#ccc;
+.titl-1-1 span {
+  font-size: 0.14rem;
+  color: #ccc;
   /* width:1.05rem; */
-  white-space:nowrap;
-   overflow:hidden;
-   text-overflow:ellipsis;
-   /* line-height:.11rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* line-height:.11rem;
    display: inline-block */
 }
-.titl-11{
+.titl-11 {
   position: absolute;
- right:0;
- text-align: center;
+  right: 0;
+  text-align: center;
   display: inline-block;
- font-size:.19rem;
- color:rgb(255, 72, 0)
+  font-size: 0.19rem;
+  color: rgb(255, 72, 0);
 }
-.images{
-  margin-bottom:1.4rem
+.images {
+  margin-bottom: 1.4rem;
 }
-.images img{
-  width:100%;
-  height:100%;
- 
+.images img {
+  width: 100%;
+  height: 100%;
 }
 /* .van-grid-item:last-child{
   margin-bottom:50px

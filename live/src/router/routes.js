@@ -175,24 +175,24 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
     },
 
     children: [{
-        path: 'fair',
-        component: () =>
-          import('@/pages/market/fair/fair.vue'),
-        meta: {
-          keep: true
-        },
-      }, {
-        path: 'community',
-        component: () =>
-          import('@/pages/market/community/community.vue')
-
+      path: 'fair',
+      component: () =>
+        import('@/pages/market/fair/fair.vue'),
+      meta: {
+        keep: true
       },
-      {
-        path: 'convenience',
-        component: () =>
-          import('@/pages/market/convenience/convenience.vue')
+    }, {
+      path: 'community',
+      component: () =>
+        import('@/pages/market/community/community.vue')
 
-      }
+    },
+    {
+      path: 'convenience',
+      component: () =>
+        import('@/pages/market/convenience/convenience.vue')
+
+    }
     ],
 
 
@@ -233,6 +233,9 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
       import('@/pages/market/shop_car.vue')
   },
 
+  /**
+   * 社区活动
+   */
   {
     path: '/community',
 
@@ -242,12 +245,100 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
     },
 
   },
+  // 发布帖子
+  {
+    path: '/postmsg',
+    component: () =>
+      import('@/pages/community/postmsg.vue')
+  },
+  // 发布友两手
+  {
+    path: '/usedmarket',
+    component: () =>
+      import('@/pages/community/usedmarket.vue')
+  },
+  // 发布活动
+  {
+    path: '/myactivity',
+    component: () =>
+      import('@/pages/community/myactivity.vue')
+  },
+
+  // 帮助
+  {
+    path: '/neighborhelp',
+    component: () =>
+      import('@/pages/community/neighborhelp.vue')
+  },
+
+  /**
+   * 个人中心
+   */
   {
     path: '/person',
     component: Person,
     meta: {
       keep: true
     },
+  },
+  // 我的帖子
+  {
+    path: '/person/mymsg',
+    component: () =>
+      import('@/pages/person/mylist/mymsg.vue'),
+
+  },
+  // 个人资料
+  {
+    path: '/person/mydata',
+    component: () =>
+      import('@/pages/person/mylist/mydata.vue'),
+
+  },
+  // 皇冠
+  {
+    path: '/person/crown',
+    component: () =>
+      import('@/pages/person/mylist/crown.vue'),
+
+  },
+  // 我的友两手
+  {
+    path: '/person/mygoods',
+    component: () =>
+      import('@/pages/person/mylist/mygoods.vue'),
+
+  },
+  // 建议提交
+  {
+    path: '/person/mysuggest',
+    component: () =>
+      import('@/pages/person/mylist/mysuggest.vue'),
+
+  },
+  // 我的一卡通
+  {
+    path: '/person/mycart',
+    component: () =>
+      import('@/pages/person/mylist/mycart.vue')
+  },
+  // 我的活动
+  {
+    path: '/person/myactive',
+    component: () =>
+      import('@/pages/person/mylist/myactive.vue')
+  },
+  // 通知设置
+  {
+    path: '/person/settings',
+    component: () =>
+      import('@/pages/person/mylist/settings.vue')
+  },
+  // 关于我们
+  {
+    path: '/person/aboutUs',
+    component: () =>
+      import('@/pages/person/mylist/aboutUs.vue')
   },
   {
     path: '/housekeeper',
@@ -281,7 +372,7 @@ const routes = [ // 传统路由都是通过集中管理路由来完成的，所
   {
     path: '/choosecommunity',
     component: () =>
-    import('@/pages/loginregister/choosecommunity.vue')
+      import('@/pages/loginregister/choosecommunity.vue')
   },
 
   { //错误路由匹配写在路由表的最下方
