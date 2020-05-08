@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>live</title>
-    <style>
-      html,body, #app{
-        width:100%;
-        height:100%;
-        margin:0;
-        padding:0;
-        overflow: hidden;
-      }
-      *{
-        position: relative;
-        margin:0;
-        padding:0;
-        list-style: none;
-      }
 
-</style>
-  </head>
-  <body>
+<head>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <!-- 引入font-awesome -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  <title>live</title>
+  
+</head>
+
+<style>
+  html,
+  body,
+  #app {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+  }
+
+  * {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @font-face {
+    font-family: 'iconfont';
+    /* project id 1359457 */
+    src: url('//at.alicdn.com/t/font_1359457_jgwwvqjg73t.eot');
+    src: url('//at.alicdn.com/t/font_1359457_jgwwvqjg73t.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1359457_jgwwvqjg73t.woff2') format('woff2'), url('//at.alicdn.com/t/font_1359457_jgwwvqjg73t.woff') format('woff'), url('//at.alicdn.com/t/font_1359457_jgwwvqjg73t.ttf') format('truetype'), url('//at.alicdn.com/t/font_1359457_jgwwvqjg73t.svg#iconfont') format('svg');
+  }
+
+  .iconfont {
+    font-family: 'iconfont' !important;
+    font-size: 0.16rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+
+<body>
+  
+  <div id="app"></div>
+ 
+</body>
+
+
 </html>
+
+<script>
+  // fnResize()
+  // window.onresize = function () {
+  //   fnResize()
+  // }
+
+  // function fnResize() {
+  //   var deviceWidth = document.documentElement.clientWidth || window.innerWidth
+  //   if (deviceWidth >= 750) {
+  //     deviceWidth = 750
+  //   }
+  //   if (deviceWidth <= 320) {
+  //     deviceWidth = 320
+  //   }
+  //   document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px'
+  // }
+</script>
