@@ -6,12 +6,12 @@
     <Footer></Footer>
     <!-- <van-cell is-link @click="showPopup">展示弹出层</van-cell> -->
     <van-popup v-model="show" closeable>
-      <h3>欢迎来到</h3>
-      <h3>杭州魅力之城</h3>
-      <div class="identity">
+      <h3>欢迎来到my</h3>
+      <h3>杭州魅力之城my</h3>
+      <!-- <div class="identity">
         当前身份：
         <span>游客</span>
-      </div>
+      </div> -->
       <div class="btn">
         <button>我住这，去选房</button>
         <button>只想接收小区信息</button>
